@@ -11,7 +11,7 @@ your_password = "Your Password"
 # If you are using something other than gmail
 # then change the 'smtp.gmail.com' and 465 in the line below
 server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-server.ehlo()
+server.echo()
 server.login(your_email, your_password)
 
 # Read the file that containe all the mails
